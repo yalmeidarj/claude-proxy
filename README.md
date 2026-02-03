@@ -1,6 +1,6 @@
 # Claude Proxy Documentation
 
-A lightweight HTTP proxy that routes Claude Code requests through alternative LLM providers, with automatic failover when a provider is unavailable (rate limits, outages, etc.).
+Routes Claude Code traffic through alternative LLM providers behind a local HTTP server. When a provider returns 429 or 5xx, the next one in the list takes over.
 
 ## Overview
 
